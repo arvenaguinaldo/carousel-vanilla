@@ -1,15 +1,17 @@
 <!doctype html>
 <html>
   <head>
+      <meta charset="utf-8">
       <title>carousel</title>
       <link href="carousel-style.css" rel="stylesheet" type="text/css">
+      <script src="carousel-js.js"></script> 
   </head>
-  
+
 <body onLoad="photoA()">
 <div id="slider">
-  <img src="pictures/image1.jpg" id="image" >
-  <div class="left-button"><img class="left" src="pictures/arrow_left.png"></div>
-  <div class="right-button"><img class="right" src="pictures/arrow_right.png"></div>
+  <img src="pictures/image1.jpg" id="image">
+  <div class="left-button"><img onClick="photo(-1)" class="left" src="pictures/arrow_left.png"></div>
+  <div class="right-button"><img onClick="photo(1)" class="right" src="pictures/arrow_right.png"></div>
 </div>
 
 </body>
